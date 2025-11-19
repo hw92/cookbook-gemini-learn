@@ -8,3 +8,16 @@
 # Ignore fork-syncing workflow, should only exist in forks
 # cf. https://github.com/Giom-V/gemini-api-cookbook/blob/main/.github/workflows/sync.yml
 .github/workflows/sync.yml
+
+# Personal learning labs - keep structure but ignore experiments
+labs/**/*.py
+labs/**/*.ipynb
+labs/**/*.json
+labs/**/*.txt
+!labs/README.md
+!labs/**/.gitkeep
+
+# API keys and secrets
+.env
+.env.local
+**/.api_key
